@@ -1,4 +1,5 @@
 # By default Volt generates this controller for your Main component
+require 'opal-jquery'
 module Main
   class MainController < Volt::ModelController
     def index
@@ -9,6 +10,10 @@ module Main
 
       #page._tweets = client.search("from:", result_type: "recent").take(20)
       page._tweets = [{text: 'hello 123456789'}, {text: 'goodbye 123456789'}]
+
+      Document.ready? do
+        alert "document is ready to go!"
+      end
     end
 
     def about
