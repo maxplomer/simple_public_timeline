@@ -6,27 +6,14 @@ textarea {
   width: 100%;
 }
 
-.todo-table {
+.tweet-table {
   width: auto;
+  border: 1px solid yellow;
 
   tr {
-    &.selected td {
-      background-color: #428bca;
-      color: #FFFFFF;
-
-      button {
-        color: #000000;
-      }
-    }
-
     td {
       padding: 5px;
       border-top: 1px solid #EEEEEE;
-
-      &.complete {
-        text-decoration: line-through;
-        color: #CCCCCC;
-      }
     }
   }
 }
