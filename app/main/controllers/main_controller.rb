@@ -2,7 +2,12 @@
 module Main
   class MainController < Volt::ModelController
     def index
-      page._tweets = [{text: 'helloworld'}, {text: '12345678'}]
+      client = Twitter::REST::Client.new do |config|
+        config.consumer_key    = ENV['TWITTER_CONSUMER_KEY']
+        config.consumer_secret = ENV['TWITTER_CONSUMER_SECRET']
+      end
+
+      page._tweets = client.search("from:", result_type: "recent").take(20)
     end
 
     def about
