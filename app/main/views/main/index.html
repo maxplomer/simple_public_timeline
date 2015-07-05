@@ -2,5 +2,14 @@
   Home
 
 <:Body>
-  <h1>Home</h1>
+  <h1>Recent Public Tweets</h1>
+  <h2>What everyone on Twitter is talking about!</h2>
+
+  <table class="todo-table">
+    {{ page._tweets.each do |tweet| }}
+      <tr>
+        <td>{{ tweet._text }}</td>
+      </tr>
+    {{ end }}
+  </table>
 

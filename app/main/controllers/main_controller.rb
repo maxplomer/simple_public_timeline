@@ -2,7 +2,7 @@
 module Main
   class MainController < Volt::ModelController
     def index
-      # Add code for when the index view is loaded
+      page._tweets = [{text: 'helloworld'}, {text: '12345678'}]
     end
 
     def about
