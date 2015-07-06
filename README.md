@@ -7,7 +7,7 @@ This Volt powered app was created as part of a coding challenge for a job applic
 
 I did neither of these because I made the app in the most cutting edge framework Volt, that runs Ruby code on both the server and client.
 
-I created a Task that gets the tweets using the twitter gem.  The app then calls that task (effectively using the server as a proxy between the client and Twitter API), then renders the document and displays the tweets when they arrive.  There is absolutely no JavaScript used.
+I created a Task that gets the tweets using the twitter gem.  The client then calls that task (effectively using the server as a proxy between the client and Twitter API), then renders the document and displays the tweets when they arrive.  There is absolutely no JavaScript used.
 
 A spec that tests the TwitterTasks is in the folder /spec/app/main/tasks/
 
