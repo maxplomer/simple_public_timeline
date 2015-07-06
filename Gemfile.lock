@@ -66,6 +66,7 @@ GEM
       tilt (~> 1.4)
     opal-rspec (0.4.3)
       opal (>= 0.7.0, < 0.9)
+    phantomjs (1.9.8.0)
     poltergeist (1.5.1)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -181,6 +182,7 @@ DEPENDENCIES
   concurrent-ruby-ext (~> 0.8.0)
   csso-rails (~> 0.3.4)
   opal-rspec (~> 0.4.2)
+  phantomjs
   poltergeist (~> 1.5.0)
   rbnacl
   rbnacl-libsodium

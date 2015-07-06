@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'twitter'
 gem 'time-lord'
+gem 'phantomjs'
 
 gem 'volt', '0.9.4'
 

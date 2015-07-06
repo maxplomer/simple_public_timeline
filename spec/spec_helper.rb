@@ -12,3 +12,7 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = 'random'
 end
+
+
+# system command I use to run
+# $ BROWSER=/Users/maxplomer/.phantomjs/1.9.8/darwin/bin/phantomjs bundle exec rspec
