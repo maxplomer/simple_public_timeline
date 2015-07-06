@@ -10,7 +10,7 @@
       <tr>
         <td>
           <img src="{{ tweet._pic_url }}"> 
-          <a href="http://www.twitter.com/{{ tweet._username }}" target="_blank">{{ tweet._username }}</a> <br>
+          <a href="http://www.twitter.com/{{ raw(tweet._username) }}" target="_blank">{{ tweet._username }}</a> <br>
           {{ tweet._text }} <br>
           {{ tweet._time }} 
           {{ raw(tweet._device) }} <br>

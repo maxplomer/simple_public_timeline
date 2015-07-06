@@ -10,7 +10,6 @@ class TwitterTasks < Volt::Task
     end
 
     client.search("from:", result_type: "recent").take(20).each do |tweet|
-      puts tweet.inspect
       tweets << {
         text: tweet.text, 
         pic_url: tweet.user.profile_image_url.to_s,
