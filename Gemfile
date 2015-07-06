@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-#gem 'opal-jquery'
+gem 'twitter'
 
 gem 'volt', '0.9.4'
 
