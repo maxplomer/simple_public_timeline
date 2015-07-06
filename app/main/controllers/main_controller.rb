@@ -12,7 +12,11 @@ module Main
       page._tweets = [{text: 'hello 123456789'}, {text: 'goodbye 123456789'}]
 
       Document.ready? do
-        alert "document is ready to go!"
+        HTTP.get("https://api.twitter.com/1.1/search/tweets.json", dataType: 'jsonp') do |response|
+          #response.body
+          page._response = response
+          # => "{\"name\": \"Adam Beynon\"}"
+        end
       end
     end
 
