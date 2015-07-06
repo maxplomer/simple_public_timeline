@@ -1,6 +1,6 @@
 class TwitterTasks < Volt::Task
   def get_tweets
-  	require 'twitter'
+    require 'twitter'
     tweets = []
 
     client = Twitter::REST::Client.new do |config|
@@ -11,11 +11,11 @@ class TwitterTasks < Volt::Task
     client.search("from:", result_type: "recent").take(20).each do |tweet|
       puts tweet.inspect
       tweets << {
-      	text: tweet.text, 
-      	pic_url: tweet.user.profile_image_url.to_s,
-      	username: tweet.user.name,
-      	time: tweet.created_at.strftime("%d/%m/%Y %H:%M"),
-      	device: tweet.source
+        text: tweet.text, 
+        pic_url: tweet.user.profile_image_url.to_s,
+        username: tweet.user.name,
+        time: tweet.created_at.strftime("%d/%m/%Y %H:%M"),
+        device: tweet.source
       }
     end
 
