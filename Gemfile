@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'twitter'
+gem 'time-lord'
 
 gem 'volt', '0.9.4'
 

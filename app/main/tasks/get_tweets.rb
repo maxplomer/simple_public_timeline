@@ -1,6 +1,7 @@
 class TwitterTasks < Volt::Task
   def get_tweets
     require 'twitter'
+    require 'time-lord'
     tweets = []
 
     client = Twitter::REST::Client.new do |config|
@@ -14,7 +15,7 @@ class TwitterTasks < Volt::Task
         text: tweet.text, 
         pic_url: tweet.user.profile_image_url.to_s,
         username: tweet.user.name,
-        time: tweet.created_at.strftime("%d/%m/%Y %H:%M"),
+        time: tweet.created_at.ago.to_words,
         device: tweet.source
       }
     end
