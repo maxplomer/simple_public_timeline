@@ -52,8 +52,6 @@ GEM
       sourcemap (~> 0.1.0)
       sprockets (>= 2.2.3, < 3.0.0)
       tilt (~> 1.4)
-    opal-jquery (0.3.0)
-      opal (~> 0.7.0)
     opal-rspec (0.4.3)
       opal (>= 0.7.0, < 0.9)
     poltergeist (1.5.1)
@@ -156,7 +154,6 @@ DEPENDENCIES
   chromedriver2-helper (~> 0.0.8)
   concurrent-ruby-ext (~> 0.8.0)
   csso-rails (~> 0.3.4)
-  opal-jquery
   opal-rspec (~> 0.4.2)
   poltergeist (~> 1.5.0)
   rbnacl

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'opal-jquery'
+#gem 'opal-jquery'
 
 gem 'volt', '0.9.4'
 
