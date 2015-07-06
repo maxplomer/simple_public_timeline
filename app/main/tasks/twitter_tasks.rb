@@ -13,7 +13,7 @@ class TwitterTasks < Volt::Task
       tweets << {
         text: tweet.text, 
         pic_url: tweet.user.profile_image_url.to_s,
-        username: tweet.user.username,
+        username: tweet.user.screen_name,
         time: tweet.created_at.ago.to_words,
         device: tweet.source
       }
