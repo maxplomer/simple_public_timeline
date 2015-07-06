@@ -8,7 +8,7 @@ class TwitterTasks < Volt::Task
       config.consumer_secret = ENV['TWITTER_CONSUMER_SECRET']
     end
 
-    client.search("from:", result_type: "recent").take(20).each do |tweet|
+    client.search("from:", result_type: "recent", count: 20).each do |tweet|
       tweets << {text: tweet.text}
     end
 
