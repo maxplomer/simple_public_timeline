@@ -8,8 +8,6 @@ module Main
       end.fail do |error|
         puts "Error: #{error}"
       end
-
-      #page._tweets = [{text: 'hello 123456789'}, {text: 'goodbye 123456789'}]
     end
 
     def about
