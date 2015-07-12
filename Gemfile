@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.2.2" # specify a Ruby version
+ruby '2.2.2' # specify a Ruby version
 
 gem 'twitter'
 gem 'time-lord'
