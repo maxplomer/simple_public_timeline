@@ -38,9 +38,12 @@ Volt.configure do |config|
   ##########
   # Database config all start with db_ and can be set either in the config
   # file or with an environment variable (DB_NAME for example).
-
-  # config.db_driver = 'mongo'
-  # config.db_name = (config.app_name + '_' + Volt.env.to_s)
+  if ENV['MONGOLAB_DBUSER'].present?
+    config.db_driver = 'mongo'
+    config.db_name = (config.app_name + '_' + Volt.env.to_s)
+    # you will have to set the environment variables on heroku
+    config.db_uri = "mongodb://#{ENV['MONGOLAB_DBUSER']}:#{ENV['MONGOLAB_DBPASSWORD']}@ds043082.mongolab.com:43082/simple-public-timeline"
+  end
   # config.db_host = 'localhost'
   # config.db_port = 27017
 
