@@ -6,6 +6,8 @@ gem 'twitter'
 gem 'time-lord'
 gem 'phantomjs'
 
+gem 'dotenv'
+
 gem 'volt', '0.9.4'
 
 # volt uses mongo as the default data store.
